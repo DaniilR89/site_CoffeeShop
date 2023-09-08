@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+}
+
+/* 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Righteous', cursive;
+*/
+
+body{    
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    background: #14110E;
+}
+
+.container--header{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.btn{
+    text-align: center;
+    background: #C99E71;
+    color: #fff;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn--avg{
+    padding: 20px 36px;
+}
+
+.btn--big{
+    padding: 24px 40px;
+}
+
+.btn--add{
+    position: relative;
+    padding: 13px 20px;
+    padding-left: 56px;
+}
+
+.btn--add::before{
+    position: absolute;
+    content: "";
+    background: url("../img/shopping-bag.png");
+    width: 24px;
+    height: 24px;
+    left: 20px;
+    top: 12px;
+}
+
+/* HEADER */
+
+.header {
+    padding: 32px 0;
+    background: #1C1814;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.nav__items {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.nav__item {
+}
+
+.nav__link {
+    position: relative;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: .3s linear;
+}
+
+.nav__link:hover{
+    color: #C99E71;
+    font-weight: 700;
+}
+
+.logo {
+}
+
+.img__logo {
+}
+
+.img__nav-link {
+}
+
+/* ENJOY */
+
+.enjoy {
+    background: url("../img/enjoy-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 147px;
+    padding-bottom: 166px;
+}
+
+.enjoy__content {
+
+}
+
+.enjoy__content-title {
+    max-width: 530px;
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 32px;
+}
+
+.enjoy__content-descr {
+    max-width: 511px;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    line-height: 180%;
+    text-transform: capitalize;
+    margin-bottom: 65px;
+}
+
+.enjoy__content-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enjoy__play {
+    text-align: center;
+}
+
+.img__enjoy-play {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.enjoy__play-text {
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* COFFEE */
+
+.coffee {
+    padding: 140px 0;
+}
+
+.coffee__items {
+    display: flex;
+    justify-content: center;
+    gap: 50px 35px;
+    flex-wrap: wrap;
+}
+
+.coffee__item {
+}
+
+.coffee__item-content {
+}
+
+.coffee__item-title {
+    font-family: "Righteous";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.coffee__item-title span{
+    color: #C99E71;
+}
+
+.img__coffee-item {
+}
+
+/* CREATE */
+
+.create {
+    padding-bottom: 140px;
+}
+
+.create__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.create__items {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.create__item {
+}
+
+.img__create-item {
+}
+
+.create__info {
+    flex-basis: 510px;
+    background: #1C1814;
+    padding: 120px 56px 147px 56px;
+}
+
+.create__info-content {
+}
+
+.create__info-suptitle {
+    color: #C99E71;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.create__info-title {
+    font-family: "Righteous";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 36px;
+}
+
+.create__info-descr {
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 180%;
+    text-transform: capitalize;
+}
+
+/* PRODUCT */
+
+.product {
+    padding-bottom: 140px;
+}
+
+.header__content {
+    text-align: center;
+}
+
+.header__content-suptitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #C99E71;
+    margin-bottom: 12px;
+}
+
+.header__content-title {
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.product__items {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.product__item {
+    padding: 48px;
+    background: #121315;
+    text-align: center;
+}
+
+.product__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img__product-content {
+    margin-bottom: 36px;
+}
+
+.product__content-title {
+    font-family: "Righteous";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.product__content-btns{
+    margin-top: 18px;
+}
+
+.product__content-rate {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product__rate-title {
+    color: #C99E71;
+    text-transform: uppercase;
+}
+
+.img__product-star {
+}
+
+.product__content-price {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product__content-price span{
+    color: #C99E71;
+}
+
+.product__btns{
+    margin-top: 56px;
+    text-align: center;
+}
+
+/* BUY */
+
+.buy {
+    padding-bottom: 140px;
+}
+
+.buy__wrapper {
+    background: #1C1814;
+    padding: 85px 0;
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.buy__photo {
+}
+
+.img__buy-ph {
+}
+
+.buy__info {
+    flex-basis: 535px;
+}
+
+.buy__info-title {
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%; /* 62.4px */
+    margin-bottom: 36px;
+}
+
+.buy__info-descr {
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 180%;
+    text-transform: capitalize;
+    margin-bottom: 36px;
+}
+
+/* MENU */
+
+.menu {
+    padding-bottom: 140px;
+}
+
+.menu__items {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    flex-basis: 565px;
+    border: 1px solid #32323D;
+}
+
+.menu__item-content {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__content-about {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.img__menu-about {
+}
+
+.menu__about-title {
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.menu__content-price {
+    color: #C99E71;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* SAYS */
+
+.says {
+    padding-bottom: 140px;
+}
+
+.says__items {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.says__item {
+    flex-basis: 565px;
+    background: #1C1814;
+    padding: 40px;
+}
+
+.says__item-content {
+}
+
+.says__content-info {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.img__says-info {
+}
+
+.says__info-text {
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 180%;
+    text-transform: capitalize;
+}
+
+.says__content-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.says__rating-about {
+}
+
+.says__about-name {
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.says__about-job {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    line-height: 180%;
+    text-transform: capitalize;
+}
+
+.img__says-stars {
+}
+
+/* BOOKING */
+
+.booking {
+    padding-bottom: 140px;
+}
+
+.booking__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking__photo {
+}
+
+.img__booking-ph {
+}
+
+.booking__info {
+    flex-basis: 585px;
+    background: #1C1814;
+    padding: 72px 48px;
+}
+
+.booking__info-content {
+}
+
+.booking__info-items {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.booking__info-item {
+    background: #14110E;
+    padding: 16px 20px;
+}
+
+.booking__info-text {
+}
+
+.booking__info-btns {
+    margin-top: 56px;
+    text-align: center;
+}
+
+/* OUR */
+
+.our {
+    padding-bottom: 140px;
+}
+
+.our__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.our__item {
+    flex-basis: 366px;
+    background: #1C1814;
+}
+
+.img__our-item {
+}
+
+.our__item-content {
+    padding: 20px 24px 24px 24px;
+}
+
+.our__content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.our__header-by {
+}
+
+.our__header-by span{
+    color: #C99E71;
+}
+
+.our__header-date {
+}
+
+.our__content-title {
+    font-family: "Righteous";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+
+.our__content-link {
+    position: relative;
+    color: #C99E71;
+    padding-right: 34px;
+}
+
+.our__content-link::after{
+    position: absolute;
+    content: "";
+    background: url("../img/arrow-right.png");
+    width: 24px;
+    height: 24px;
+    right: 0;
+    top: 0;
+}
+
+/* FOOTER */
+
+.footer{
+    padding-bottom: 75px;
+}
+
+.footer__input {
+    position: relative;
+    width: 328px;
+}
+
+.input__footer {
+    width: 100%;
+    border-radius: 36px;
+    background: #1C1814;
+    padding: 22px 28px;
+    padding-right: 80px;
+    color: #fff;
+}
+
+.footer__input-link {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+
+.img__footer-link {
+}
+
+/* COPYRIGHT */
+
+.footer__copyright {
+    background: #1C1814;
+    padding: 33px 0;
+}
+
+.footer__copyright-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 180%;
+}
